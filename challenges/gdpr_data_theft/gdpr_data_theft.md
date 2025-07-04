@@ -1,0 +1,61 @@
+# GDPR Data Theft
+
+For this challenge I started the Kali VM to start the OWASP juice shop application.
+
+![kali VM](imgs/gdpr_kali_vm.png)
+
+Starting the owaps juice shop and the `zaproxy` tool. The `zaproxy` tool will be used as a penetration testing tool to find vulnerabilities in web applications.
+
+![start juice and zaproxy](imgs/gdpr_start_app_zarp.png)
+
+Once the proxy tool started, I will lauch the browser from the `zaproxy`. In the new opened browser I write the url from the juice shop in the search bar.
+
+```
+http:localhost:3000
+```
+![]("")
+![lauch brwoser from zaproxy](imgs/gdpr_brwser_lauch.png)
+
+
+![localhost](imgs/juice_sh_localhost.png)
+
+Next I logged in as an existent user, in this case as `bender@juice-sh.op` (attack target) to make some product orders and inspect the petitions maded to the server.
+
+I went to `http:localhost:3000/#/login` and in the email field I typed the following:
+
+```
+bender@juice-sh.op' OR email = 'bender@juice-sh.op' --
+```
+
+I did an injection here because the juice shop page is not protected against it and I don't know the password for `bender`.
+
+After the login, I whent to `http:localhost:3000/#/basket` and completed the purchase of the item that was already in the buying basket.
+
+![bender's basket](imgs/bender_basket.png)
+
+![bender's complete order](imgs/complete_order.png)
+
+With the order completed, I go to the `zaproxy` to inspect the complete order request. I can see a `GET` request with the url `http:localhost:3000/rest/track-order/<oder_number>` with the following response payload:
+
+![oder response](imgs/complete_order_res.png)
+
+The response shows the user `email` with the vowels sustitued with `*` before storing the order in the DB. The `orderId` is also available in the payload and can be used as a reference when retrieving the personal data with a new user.
+
+Creating a new user `bandar@juice-sh.op` that only has different vowels as `bender` to cause a clash when obfuscating the email.
+
+First thing to do is, loggin out as bender and then create a new user.
+
+![bandar regist](imgs/bandar_regist.png)
+
+After having loggin in with `bandar`, I visit `http:localhost:3000/#/privacy-security/data-export` and select an export format (json).
+
+![](imgs/challenge_success.png)
+
+The challenge is solved just after requesting the personal data, but here is an explanation.
+
+I compared the previous `oderId` from `bender`, it is the `130f-f2f4e2800ed87fc0`. When we click export data, a popup will open with the data in a json format. There is the `130f-f2f4e2800ed87fc0` from the previous user purchase but using another user account that only happends to have different vowels as attack target user. This weakness can be used to get more data from all the users in the juice shop (the users with purchase history).
+
+![order id compare](imgs/compare_id.png)
+
+
+
