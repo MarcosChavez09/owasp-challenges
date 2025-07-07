@@ -33,7 +33,7 @@ __Category__: Sensitive Data Exposure
 
 __Difficulty__: :star: :star: :star: :star:
 	
-Steal someone else’s personal data without using Injection. The OWASP juice shop is complient with general data protection regulation (GDPR) and has a `data request export function` that explioted to find a flaw and retrieve personal data. Write-up document: [gdpr_data_theft]().
+Steal someone else’s personal data without using Injection. The OWASP juice shop is complient with general data protection regulation (GDPR) and has a `data request export function` that explioted to find a flaw and retrieve personal data. Write-up document: [gdpr_data_theft](challenges/gdpr_data_theft/gdpr_data_theft.md).
 
 ## Project Checklist
 
