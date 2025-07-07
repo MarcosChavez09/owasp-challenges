@@ -11,7 +11,7 @@ With the VM active I started the owasp juice shop and the `zaproxy` tool. The `z
 Once the proxy tool started, I opened the browser from the `zaproxy` tool. In the new opened browser, I wrote in the search bar the url from the juice shop.
 
 ```
-http:localhost:3000
+http://localhost:3000
 ```
 ![lauch brwoser from zaproxy](imgs/gdpr_brwser_lauch.png)
 

@@ -10,7 +10,7 @@ With the VM active I started the owasp juice shop and the `zaproxy` tool. The `z
 Once the proxy tool started, I opened the browser from the `zaproxy` tool. In the new opened browser, I wrote in the search bar the url from the juice shop.
 
 ```
-http:localhost:3000
+http://localhost:3000
 ```
 
 ![lauch brwoser from zaproxy](imgs/tamp_brwser_lauch.png)
@@ -23,17 +23,17 @@ Once in the main page, I started to search for the target product (o-saft) and i
 
 In the __Network__ tab, I can see a request `http://localhost:3000/api/Quantitys` with all the available products and also a `ProductId` but with no __description__ of the products.
 
-I decided to modify the requesto to `http://localhost:3000/api/products` to see if I can get something from the server. I got a list with all the products, most important the `id` and `description`.
+I decided to modify the request to `http://localhost:3000/api/products` to see if I can get something from the server. I got a list with all the products and, most important, the `id` and `description`.
 
 ![all_products_api](imgs/check_products_api.png)
 
-This gave me the `id` of the `o-saft` product, the `id` was `9`. The `description` contained the link that should be changed in this challenge. 
+This gave me the `id` of the `o-saft` product and the `id: 9`. The `description` contained the link that should be changed in this challenge. 
 
 ![product_9](imgs/product_id.png)
 
-I had to find the correct path to make a request and change the `description` and pass `<a href=\"https://owasp.slack.com\" target=\"_blank\">More...</a>` in it. 
+I had to find the correct path to make a request and change the `description` to `<a href=\"https://owasp.slack.com\" target=\"_blank\">More...</a>`. 
 
-I noticed that when I logged in as `admin` and go to the `/administration` page, I can see the revious of all products. I could also __delete__ the reviews. So, I deleted a review and look at the network. 
+I noticed that, when I login as `admin` and go to the `/administration` page, I can see the reviews of all products. I can also __delete__ the reviews. So, I deleted a review and took look at the network. 
 
 
 ![find_api_path](imgs/find_api_path.png)
