@@ -14,7 +14,7 @@ A repository with a series of selected OWASP juice shop challenges solutions and
 1. [Introduction](#introduction)
 2. [Challenges](#challenges)
     - [GDPF Data Theft](#gdpf-data-theft)
-    - []()
+    - [Product Tampering]()
     - []()
 
 4. [Project Checklist](#project-checklist)
@@ -33,7 +33,19 @@ __Category__: Sensitive Data Exposure
 
 __Difficulty__: :star: :star: :star: :star:
 	
-Steal someone else’s personal data without using Injection. The OWASP juice shop is complient with general data protection regulation (GDPR) and has a `data request export function` that explioted to find a flaw and retrieve personal data. Write-up document: [gdpr_data_theft](challenges/gdpr_data_theft/gdpr_data_theft.md).
+Steal someone else’s personal data without using Injection. The OWASP juice shop is complient with general data protection regulation (GDPR) and has a `data request export function` that explioted to find a flaw and retrieve personal data.
+
+Write-up document: [gdpr_data_theft](challenges/gdpr_data_theft/gdpr_data_theft.md).
+
+### Product Tampering
+
+__Category__: Broken Access Control
+
+__Difficulty__: :star: :star: :star:
+
+Change the href of the link within the OWASP SSL Advanced Forensic Tool (O-Saft) product description into https://owasp.slack.com. 
+
+Write-up document: [product_tampering](challenges/product_tampering/product_tampering.md).
 
 ## Project Checklist
 
