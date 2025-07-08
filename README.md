@@ -14,8 +14,8 @@ A repository with a series of selected OWASP juice shop challenges solutions and
 1. [Introduction](#introduction)
 2. [Challenges](#challenges)
     - [GDPF Data Theft](#gdpf-data-theft)
-    - [Product Tampering]()
-    - []()
+    - [Product Tampering](#product-tampering)
+    - [Reset Bender’s Password](#reset-benders-password)
 
 4. [Project Checklist](#project-checklist)
 
@@ -37,7 +37,7 @@ Steal someone else’s personal data without using Injection. The OWASP juice sh
 
 Write-up document: [gdpr_data_theft](challenges/gdpr_data_theft/gdpr_data_theft.md).
 
-### Product Tampering
+### Product Tampering.
 
 __Category__: Broken Access Control
 
@@ -46,6 +46,16 @@ __Difficulty__: :star: :star: :star:
 Change the href of the link within the OWASP SSL Advanced Forensic Tool (O-Saft) product description into https://owasp.slack.com. 
 
 Write-up document: [product_tampering](challenges/product_tampering/product_tampering.md).
+
+### Reset Bender’s Password.
+
+__Category__: Broken Authentication
+
+__Difficulty__: :star: :star: :star: :star:
+
+Reset Bender’s password via the Forgot Password mechanism with the truthful answer to his security question.
+
+Write-up document: [](challenges/reset_benders_pass/).
 
 ## Project Checklist
 
