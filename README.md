@@ -1,61 +1,65 @@
-# OWASP Juice shop challenges.
+# OWASP Juice Shop Challenges
 
 ## Description
-A repository with a series of selected OWASP juice shop challenges solutions and write-up documentation.
+A repository with a series of selected OWASP Juice Shop challenge solutions and write-up documentation.
 
 > [!WARNING]
 >
-> This is only for learning purpuses.
+> This is only for learning purposes.
 >
->Only do this in a safe, isolated environment (like a VM).
+> Only do this in a safe, isolated environment (like a VM).
 
 ## Table of Contents
 
 1. [Introduction](#introduction)
 2. [Challenges](#challenges)
-    - [GDPF Data Theft](#gdpf-data-theft)
+    - [GDPR Data Theft](#gdpr-data-theft)
     - [Product Tampering](#product-tampering)
-    - [Reset Bender’s Password](#reset-benders-password)
+    - [Reset Bender's Password](#reset-benders-password)
+3. [Project Checklist](#project-checklist)
 
-4. [Project Checklist](#project-checklist)
-
-## Introduction.
+## Introduction
 OWASP Juice Shop is a deliberately insecure web application designed for security training, CTFs, and tool testing. It is a learning platform that helps developers, security professionals, and enthusiasts understand common web application security issues.
 
-More information [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/).
+More information: [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/)
 
+## Challenges
 
-## Challenges.
-
-### GDPR Data Theft.
+### GDPR Data Theft
 
 __Category__: Sensitive Data Exposure
 
 __Difficulty__: :star: :star: :star: :star:
-	
-Steal someone else’s personal data without using Injection. The OWASP juice shop is complient with general data protection regulation (GDPR) and has a `data request export function` that explioted to find a flaw and retrieve personal data.
 
-Write-up document: [gdpr_data_theft](challenges/gdpr_data_theft/gdpr_data_theft.md).
+__Loom Video__:
 
-### Product Tampering.
+Steal someone else's personal data without using Injection. The OWASP Juice Shop is compliant with General Data Protection Regulation (GDPR) and has a `data request export function` that can be exploited to find a flaw and retrieve personal data.
+
+Write-up document: [gdpr_data_theft](challenges/gdpr_data_theft/gdpr_data_theft.md)
+
+### Product Tampering
 
 __Category__: Broken Access Control
 
 __Difficulty__: :star: :star: :star:
 
-Change the href of the link within the OWASP SSL Advanced Forensic Tool (O-Saft) product description into https://owasp.slack.com. 
+__Loom Video__:
 
-Write-up document: [product_tampering](challenges/product_tampering/product_tampering.md).
+Change the href of the link within the OWASP SSL Advanced Forensic Tool (O-Saft) product description to https://owasp.slack.com.
 
-### Reset Bender’s Password.
+Write-up document: [product_tampering](challenges/product_tampering/product_tampering.md)
+
+### Reset Bender's Password
 
 __Category__: Broken Authentication
 
 __Difficulty__: :star: :star: :star: :star:
 
-Reset Bender’s password via the Forgot Password mechanism with the truthful answer to his security question.
+__Loom Video__:
 
-Write-up document: [](challenges/reset_benders_pass/).
+Reset Bender's password via the Forgot Password mechanism with the truthful answer to his security question.
+
+Write-up document: [reset_benders_pass](challenges/reset_benders_pass/)
 
 ## Project Checklist
 
