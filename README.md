@@ -31,7 +31,7 @@ __Category__: Sensitive Data Exposure
 
 __Difficulty__: :star: :star: :star: :star:
 
-__Loom Video__:
+__Loom Video__: https://www.loom.com/share/761f5fa5df574ca396f5dd5613e8966a?sid=fd0c6da3-8d4b-4bad-9e67-f27e2dc70e2a
 
 Steal someone else's personal data without using Injection. The OWASP Juice Shop is compliant with General Data Protection Regulation (GDPR) and has a `data request export function` that can be exploited to find a flaw and retrieve personal data.
 
