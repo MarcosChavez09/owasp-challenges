@@ -43,7 +43,7 @@ __Category__: Broken Access Control
 
 __Difficulty__: :star: :star: :star:
 
-__Loom Video__:
+__Loom Video__: https://www.loom.com/share/39ca2ce698c74cefb58cbb570b46be70?sid=2b5ab6e7-e1a7-4892-89dd-b63c386033ef
 
 Change the href of the link within the OWASP SSL Advanced Forensic Tool (O-Saft) product description to https://owasp.slack.com.
 
