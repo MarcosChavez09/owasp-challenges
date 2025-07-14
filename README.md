@@ -55,7 +55,7 @@ __Category__: Broken Authentication
 
 __Difficulty__: :star: :star: :star: :star:
 
-__Loom Video__:
+__Loom Video__: https://www.loom.com/share/140a7ed8cc7d4075b19d8f3b117d0b88?sid=bdf66aef-a838-44dc-8aec-e44afad1f3ea
 
 Reset Bender's password via the Forgot Password mechanism with the truthful answer to his security question.
 
