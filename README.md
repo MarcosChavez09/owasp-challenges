@@ -59,7 +59,7 @@ __Loom Video__: https://www.loom.com/share/140a7ed8cc7d4075b19d8f3b117d0b88?sid=
 
 Reset Bender's password via the Forgot Password mechanism with the truthful answer to his security question.
 
-Write-up document: [reset_benders_pass](challenges/reset_benders_pass/)
+Write-up document: [reset_benders_pass](challenges/reset_benders_pass/reset_benders_pass.md)
 
 ## Project Checklist
 
